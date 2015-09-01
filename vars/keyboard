@@ -1,0 +1,2 @@
+---
+xkb_options: 'caps:escape,terminate:ctrl_alt_bksp,grp:lswitch,altwin:alt_super_win,shift:both_capslock_cancel'
