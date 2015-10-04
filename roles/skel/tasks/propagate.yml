@@ -1,0 +1,6 @@
+---
+- name: propagate /etc/skel
+  command: sudo -u {{ item }} sh -c 'rsync -r /etc/skel/ ~/'
+  with_items:
+    - "{{ username }}"
+    - root

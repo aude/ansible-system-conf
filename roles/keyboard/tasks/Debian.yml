@@ -1,0 +1,7 @@
+---
+- name: 'configure keyboard: XKBLAYOUT'
+  lineinfile: dest=/etc/default/keyboard backrefs=yes regexp='(XKBLAYOUT="[^,]+)"' line='\1,no"'
+- name: 'configure keyboard: XKBVARIANT'
+  lineinfile: dest=/etc/default/keyboard backrefs=yes regexp='(XKBVARIANT="[^,]+)"' line='\1,"'
+- name: 'configure keyboard: XKBOPTIONS'
+  lineinfile: dest=/etc/default/keyboard backrefs=yes regexp='(XKBOPTIONS=")"' line=\\1{{ xkb_options }}\"

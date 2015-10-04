@@ -1,0 +1,3 @@
+---
+- name: configure X11 keyboard options
+  command: localectl set-x11-keymap us,no '' dvorak, {{ xkb_options }}

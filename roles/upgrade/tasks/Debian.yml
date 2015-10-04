@@ -1,0 +1,3 @@
+---
+- name: 'APT: upgrade all packages (aptitude safe-upgrade)'
+  apt: upgrade=yes

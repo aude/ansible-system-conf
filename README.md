@@ -1,2 +1,2 @@
-# ansible-system-conf
+# ansible-workstation
 Set up a fresh system

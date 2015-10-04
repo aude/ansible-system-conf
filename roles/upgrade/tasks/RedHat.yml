@@ -1,0 +1,3 @@
+---
+- name: 'DNF: upgrade all packages'
+  dnf: name=* state=latest

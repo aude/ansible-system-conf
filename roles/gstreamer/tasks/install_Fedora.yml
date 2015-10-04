@@ -1,0 +1,18 @@
+---
+- name: 'Fedora: install'
+  dnf: name={{ item }} state=present
+  with_items:
+    - gstreamer
+    - gstreamer-plugins-base
+    - gstreamer-plugins-good
+    - gstreamer-plugins-bad
+    - gstreamer-plugins-ugly
+    - gstreamer-ffmpeg
+    - gstreamer1
+    - gstreamer1-plugins-base
+    - gstreamer1-plugins-good
+    - gstreamer1-plugins-bad-free
+    - gstreamer1-plugins-bad-freeworld
+    - gstreamer1-plugins-ugly
+    - gstreamer1-libav
+    - gstreamer1-vaapi

@@ -1,0 +1,6 @@
+---
+- name: enable and run dnscrypt_proxy
+  service: name='dnscrypt-proxy' state=started enabled=yes
+
+- name: reload dnscrypt-proxy
+  service: name='dnscrypt-proxy' state=reloaded

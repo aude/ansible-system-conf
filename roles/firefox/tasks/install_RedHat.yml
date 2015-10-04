@@ -1,0 +1,3 @@
+---
+- name: "RedHat: install"
+  dnf: name=firefox state=present

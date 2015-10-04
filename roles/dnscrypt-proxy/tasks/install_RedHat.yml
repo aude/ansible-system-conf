@@ -1,0 +1,12 @@
+---
+- name: 'RedHat: check if Copr repo is already added'
+  stat: path=/etc/yum.repos.d/_copr_{{ dnscrypt_proxy.copr.name }}-{{ dnscrypt_proxy.copr.project }}.repo
+  register: added_dnscrypt_proxy
+
+- name: 'RedHat: add Copr repo'
+  command: dnf copr enable -y {{ dnscrypt_proxy.copr.name }}/{{ dnscrypt_proxy.copr.project }}
+  when: added_dnscrypt_proxy.stat.exists == false
+
+- name: 'RedHat: install'
+  dnf: name='dnscrypt-proxy' state=present
+  notify: enable and run dnscrypt_proxy

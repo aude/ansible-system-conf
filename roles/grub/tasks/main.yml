@@ -1,0 +1,6 @@
+---
+- include: configure.yml
+#- include: _Fedora.yml
+#  when: ansible_distribution == "Fedora"
+#- include: _Debian.yml
+#  when: ansible_distribution == "Debian"

@@ -1,0 +1,7 @@
+---
+- name: "install"
+  action: "{{ pkg_manager }} name={{ item }} state=present"
+  with_items:
+    - libva-intel-driver
+    - libva-vdpau-driver
+    - libva-utils

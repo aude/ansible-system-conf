@@ -1,0 +1,4 @@
+---
+dependencies:
+  - { role: 'dnscrypt-proxy',   tags: ['dnscrypt', 'dnscrypt-proxy'] }
+  - { role: 'unbound',          tags: ['dnssec', 'unbound'] }

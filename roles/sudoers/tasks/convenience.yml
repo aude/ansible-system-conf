@@ -1,0 +1,3 @@
+---
+- name: sudo convenience
+  template: mode=0400 owner=root group=root src=convenience.j2 dest=/etc/sudoers.d/convenience

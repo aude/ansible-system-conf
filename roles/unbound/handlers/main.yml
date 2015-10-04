@@ -1,0 +1,6 @@
+---
+- name: enable and run unbound
+  service: name=unbound state=started enabled=yes
+
+- name: reload unbound
+  service: name=unbound state=reloaded

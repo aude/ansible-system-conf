@@ -1,0 +1,3 @@
+---
+- name: 'RedHat: install'
+  dnf: name=the_silver_searcher state=present

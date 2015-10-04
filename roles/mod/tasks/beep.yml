@@ -1,0 +1,5 @@
+---
+- name: 'disable pcspkr (beep): rmmod'
+  modprobe: name=pcspkr state=absent
+- name: 'disable pcspkr (beep): blacklist'
+  template: src=nobeep.conf.j2 dest=/etc/modprobe.d/nobeep.conf

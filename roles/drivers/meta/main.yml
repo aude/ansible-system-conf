@@ -1,0 +1,4 @@
+---
+dependencies:
+  - { role: 'vaapi',    tags: 'vaapi' }
+  - { role: 'vdpau',    tags: 'vdpau' }

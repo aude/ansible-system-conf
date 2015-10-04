@@ -1,0 +1,4 @@
+---
+- name: "RedHat: install"
+  dnf: name=haveged state=present
+  notify: enable and run haveged

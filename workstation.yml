@@ -1,0 +1,49 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  vars:
+    #username: 
+
+  vars_files:
+    - "vars/{{ ansible_os_family }}.yml"
+    - "vars/{{ ansible_distribution }}.yml"
+    - "vars/default.yml"
+
+  pre_tasks:
+    #- name: group roles by distribution
+    #  group_by: key=os_{{ ansible_distribution }}
+    #  tags: always
+
+    - name: get username
+      set_fact:
+        username: "{{ ansible_env['SUDO_USER'] }}"
+      tags: always
+      when: username is not defined
+
+  roles:
+    - { role: users,            tags: ['system', 'users'] }
+    - { role: repos,            tags: ['system', 'pkg', 'repos'] }
+    - { role: update,           tags: ['system', 'pkg', 'update'] }
+    #- { role: upgrade,         tags: ['system', 'pkg', 'upgrade'] }
+    - { role: dns,              tags: ['system', 'network', 'dns'] }
+    - { role: sudoers,          tags: ['system', 'sudoers'] }
+    - { role: boot,             tags: ['system', 'boot'] }
+    - { role: tty,              tags: ['system', 'tty'] }
+    - { role: keyboard,         tags: ['system', 'keyboard'] }
+    - { role: mod,              tags: ['system', 'mod'] }
+    - { role: drivers,          tags: ['system', 'drivers'] }
+    - { role: firewall,         tags: ['system', 'firewall'] }
+    - { role: rng,              tags: ['system', 'rng'] }
+    - { role: shell,            tags: ['tools', 'shell'] }
+    - { role: editor,           tags: ['tools', 'editor'] }
+    - { role: pkg-tools,        tags: ['tools', 'pkg', 'pkg-tools'] }
+    - { role: cli-tools,        tags: ['tools', 'cli-tools'] }
+    - { role: web-browsers,     tags: ['tools', 'web', 'web-browsers'] }
+    - { role: codecs,           tags: ['media', 'codecs'] }
+    - { role: players,          tags: ['tools', 'media', 'players'] }
+    - { role: office,           tags: ['tools', 'office'] }
+    - { role: skel,             tags: ['user', 'skel'] }
+
+    #- { role: dotfiles, tags: ['user', 'dotfiles'] }

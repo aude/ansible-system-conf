@@ -1,0 +1,12 @@
+---
+- name: 'grml: download and install system wide zshrc'
+  get_url: url=http://git.grml.org/f/grml-etc-core/etc/zsh/zshrc dest=/etc/zshrc force=yes
+
+- name: 'grml: configure file permissions for system wide zshrc'
+  file: path=/etc/zshrc owner=root group=root mode=0644
+
+- name: 'grml: download and install user zshrc'
+  get_url: url=http://git.grml.org/f/grml-etc-core/etc/skel/.zshrc dest=/etc/skel/.zshrc force=yes
+
+- name: 'grml: configure file permissions for user zshrc'
+  file: path=/etc/skel/.zshrc owner=root group=root mode=0644

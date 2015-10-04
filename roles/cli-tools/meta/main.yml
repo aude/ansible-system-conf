@@ -1,0 +1,5 @@
+---
+dependencies:
+  - { role: 'pass',                     tags: 'pass' }
+  - { role: 'the_silver_searcher',      tags: 'the_silver_searcher' }
+  - { role: 'youtube-dl',               tags: 'media', 'youtube-dl' }

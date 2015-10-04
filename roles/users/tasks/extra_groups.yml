@@ -1,0 +1,3 @@
+---
+- name: add user to extra groups
+  user: name={{ ansible_user_id }} append=yes groups={{ extra_groups }}

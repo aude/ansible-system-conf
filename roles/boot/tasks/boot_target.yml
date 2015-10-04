@@ -1,0 +1,8 @@
+---
+- name: get current boot target
+  command: /bin/systemctl get-default
+  register: boot_target
+
+- name: boot to console, not graphical
+  command: /bin/systemctl set-default multi-user.target
+  when: boot_target.stdout != 'multi-user.target'

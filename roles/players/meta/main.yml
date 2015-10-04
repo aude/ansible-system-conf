@@ -1,0 +1,5 @@
+---
+dependencies:
+  - { role: 'vlc',              tags: 'vlc' }
+  - { role: 'mpv',              tags: 'mpv' }
+  - { role: 'quodlibet',        tags: 'quodlibet' }
