@@ -1,0 +1,3 @@
+---
+- name: enable
+  lineinfile: dest=/etc/skel/{{ systemd.user.file.run_after_x }} line='redshift' state=present
