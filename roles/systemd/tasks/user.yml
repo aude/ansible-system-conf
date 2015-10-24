@@ -2,8 +2,5 @@
 - name: 'user: profile.d'
   template: src=user_profile.j2 dest=/etc/skel/.config/profile.d/95_systemd_user.sh
 
-- name: 'user: run after X: create directory'
-  file: path=/etc/skel/.config/systemd/user state=directory
-
-- name: 'user: run after X: create file'
-  template: src=run_after_x.j2 dest=/etc/skel/.config/systemd/user/run-after-x.conf
+- name: 'user: run after X'
+  file: path=/etc/skel/{{ systemd.user.file.run_after_x }} state=touch
