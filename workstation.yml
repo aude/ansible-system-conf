@@ -24,6 +24,7 @@
 
   roles:
     - { role: users,            tags: ['system', 'users'] }
+    - { role: skel,             tags: ['user', 'skel'] }
     - { role: repos,            tags: ['system', 'pkg', 'repos'] }
     - { role: update,           tags: ['system', 'pkg', 'update'] }
     #- { role: upgrade,         tags: ['system', 'pkg', 'upgrade'] }
@@ -34,8 +35,11 @@
     - { role: keyboard,         tags: ['system', 'keyboard'] }
     - { role: mod,              tags: ['system', 'mod'] }
     - { role: drivers,          tags: ['system', 'drivers'] }
+    - { role: init,             tags: ['system', 'init'] }
     - { role: firewall,         tags: ['system', 'firewall'] }
+    - { role: disk,             tags: ['system', 'disk'] }
     - { role: rng,              tags: ['system', 'rng'] }
+    - { role: color,            tags: ['system', 'color'] }
     - { role: shell,            tags: ['tools', 'shell'] }
     - { role: editor,           tags: ['tools', 'editor'] }
     - { role: pkg-tools,        tags: ['tools', 'pkg', 'pkg-tools'] }

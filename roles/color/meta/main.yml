@@ -1,0 +1,3 @@
+---
+dependencies:
+  - { role: 'redshift', tags: ['eyestrain', 'redshift'] }

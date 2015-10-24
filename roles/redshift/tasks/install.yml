@@ -1,0 +1,6 @@
+---
+- name: "install"
+  action: "{{ pkg_manager }} name=redshift state=present"
+  notify:
+    - enable redshift
+    - run redshift

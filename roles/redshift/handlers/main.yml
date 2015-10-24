@@ -1,0 +1,13 @@
+---
+- name: enable redshift
+  lineinfile: dest=/etc/skel/{{ systemd.user.file.run_after_x }} line='redshift' state=present
+
+- name: run redshift
+  command: systemctl --user start redshift.service
+  become: yes
+  become_user: "{{ username }}"
+
+- name: reload redshift
+  command: systemctl --user reload redshift.service
+  become: yes
+  become_user: "{{ username }}"

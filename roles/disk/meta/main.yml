@@ -1,0 +1,3 @@
+---
+dependencies:
+  - { role: 'fstrim',   tags: 'fstrim' }

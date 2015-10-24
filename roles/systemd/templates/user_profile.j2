@@ -1,0 +1,5 @@
+systemctl --user import-environment DISPLAY
+
+while read i ; do
+    systemctl --user start "$i"
+done < {{ systemd.user.file.run_after_x }}

@@ -1,0 +1,7 @@
+---
+#- name: 'configure: fetch location'
+#  setfact: 
+
+- name: 'configure: create conf'
+  template: mode=0644 owner=root group=root src=redshift.conf.j2 dest=/etc/skel/.config/redshift.conf
+  notify: reload redshift

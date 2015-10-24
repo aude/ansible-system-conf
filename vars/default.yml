@@ -2,3 +2,15 @@
 xkb_options: 'caps:escape,terminate:ctrl_alt_bksp,grp:lswitch,altwin:alt_super_win,shift:both_capslock_cancel'
 shell: '/bin/zsh'
 EDITOR: 'vim'
+
+redshift:
+  temp_day: 6500
+  temp_night: 3600
+
+#latitude: 
+#longitude: 
+
+systemd:
+  user:
+    file:
+      run_after_x: .config/systemd/user/run-after-x.conf
