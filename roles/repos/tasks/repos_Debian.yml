@@ -1,5 +1,5 @@
 ---
-- name: 'Grml: add repository'
+- name: 'Grml: add repositories'
   apt_repository: repo='{{ item }}'
   with_items:
   - 'deb http://deb.grml.org/ grml-stable main'

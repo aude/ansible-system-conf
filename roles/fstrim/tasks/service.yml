@@ -1,3 +1,17 @@
 ---
+- name: 'copy systemd service file from examles to system'
+  copy: src='/usr/share/doc/util-linux/examples/fstrim.service' remote_src=yes dest='/etc/systemd/system/fstrim.service'
+  when: ansible_os_family == "Debian"
+
+- name: 'copy systemd timer file from examles to system'
+  copy: src='/usr/share/doc/util-linux/examples/fstrim.timer' remote_src=yes dest='/etc/systemd/system/fstrim.timer'
+  when: ansible_os_family == "Debian"
+
+- name: 'reload systemd user units'
+  command: 'systemctl --user daemon-reload'
+  become: yes
+  become_user: "{{ username }}"
+  when: ansible_os_family == "Debian"
+
 - name: enable and run
   service: name=fstrim.timer state=started enabled=yes

@@ -1,9 +1,9 @@
 ---
-- name: check if RPM Fusion is already added
+- name: 'RPM Fusion: check if already added'
   stat: path=/etc/yum.repos.d/rpmfusion-free.repo
   register: added_rpmfusion
 
-- name: add RPM Fusion repos
+- name: 'RPM Fusion: add repositories'
   dnf: name={{ item }} state=present
   with_items:
     - "http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm"
