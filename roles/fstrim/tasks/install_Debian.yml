@@ -1,0 +1,6 @@
+---
+- name: 'copy systemd service file from examles to system'
+  copy: src='/usr/share/doc/util-linux/examples/fstrim.service' remote_src=yes dest='/etc/systemd/system/fstrim.service'
+
+- name: 'copy systemd timer file from examles to system'
+  copy: src='/usr/share/doc/util-linux/examples/fstrim.timer' remote_src=yes dest='/etc/systemd/system/fstrim.timer'
