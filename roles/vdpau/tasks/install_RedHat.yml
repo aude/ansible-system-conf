@@ -1,6 +1,6 @@
 ---
-- name: "install"
-  action: "{{ pkg_manager }} name={{ item }} state=present"
+- name: "RedHat: install"
+  dnf: name={{ item }} state=present
   with_items:
     - libvdpau-va-gl
     - mesa-vdpau-drivers
