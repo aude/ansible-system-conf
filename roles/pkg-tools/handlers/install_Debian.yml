@@ -1,3 +1,3 @@
 ---
-- name: update apt-file handlers
+- name: update apt-file cache
   command: apt-file update
