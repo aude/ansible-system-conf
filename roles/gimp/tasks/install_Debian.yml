@@ -1,0 +1,6 @@
+---
+- name: "Debian: install"
+  apt: pkg={{ item }} state=present
+  with_items:
+    - gimp
+    - gimp-plugin-registry

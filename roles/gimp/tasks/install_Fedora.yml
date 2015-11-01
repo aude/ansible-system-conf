@@ -1,0 +1,8 @@
+---
+- name: "Fedora: install"
+  dnf: name={{ item }} state=present
+  with_items:
+    - gimp
+    - gimp-dbp
+    - gimp-resynthesizer
+    - gimp-wavelet-denoise-plugin
