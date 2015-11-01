@@ -1,0 +1,15 @@
+#!/bin/sh
+
+# import variables for X dependent services
+systemctl --user import-environment DISPLAY XAUTHORITY
+
+if which dbus-update-activation-environment >/dev/null 2>&1; then
+        dbus-update-activation-environment DISPLAY XAUTHORITY
+fi
+
+# start X dependent services
+while read i ; do
+    if [ -n "$i" ] ; then
+        systemctl --user start $i
+    fi
+done < ~/{{ systemd.user.run_after_x.directory }}/{{ systemd.user.run_after_x.file }}

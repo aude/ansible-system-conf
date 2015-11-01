@@ -12,5 +12,6 @@ redshift:
 
 systemd:
   user:
-    file:
-      run_after_x: .config/systemd/user/run-after-x.conf
+    run_after_x:
+      directory: .config/systemd/user
+      file: run-after-x.conf

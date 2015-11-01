@@ -1,6 +1,0 @@
----
-- name: 'profile.d'
-  file: path=/etc/skel/.config/profile.d state=directory
-
-- name: '.profile'
-  template: src=profile.j2 dest=/etc/skel/.profile

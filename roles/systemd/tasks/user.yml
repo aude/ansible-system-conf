@@ -1,9 +1,9 @@
 ---
 - name: 'user: profile.d'
-  template: src=user_profile.j2 dest=/etc/skel/.config/profile.d/95_systemd_user.sh
+  template: src=xinitrc-systemd-user.j2 dest=/etc/X11/xinit/xinitrc.d/95-systemd-user.sh
 
 - name: 'user: run after X: create directory'
-  file: path=/etc/skel/.config/systemd/user state=directory
+  file: path=/etc/skel/{{ systemd.user.run_after_x.directory }} state=directory
 
 - name: 'user: run after X: create file'
-  file: path=/etc/skel/{{ systemd.user.file.run_after_x }} state=touch
+  file: path=/etc/skel/{{ systemd.user.run_after_x.directory }}/{{ systemd.user.run_after_x.file }} state=touch

@@ -2,10 +2,5 @@
 - name: 'create .config'
   file: path='/etc/skel/.config' state=directory
 
-- include: profile.yml
+#- include: profile.yml
 - include: propagate.yml
-
-#- include: _Fedora.yml
-#  when: ansible_distribution == "Fedora"
-#- include: _Debian.yml
-#  when: ansible_distribution == "Debian"
