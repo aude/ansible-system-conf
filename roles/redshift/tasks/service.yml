@@ -9,8 +9,4 @@
 - name: "install systemd user service file \"no transition\" override"
   template: src=notransition.conf.j2 dest='/etc/systemd/user/redshift.service.d/notransition.conf'
 
-- name: 'reload systemd user units'
-  command: 'systemctl --user daemon-reload'
-  become: yes
-  become_user: "{{ username }}"
-  when: ansible_os_family == "Debian"
+#- notify: reload systemd user

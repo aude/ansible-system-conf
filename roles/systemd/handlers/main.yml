@@ -1,0 +1,8 @@
+---
+- name: reload systemd system
+  command: systemctl --system daemon-reload
+
+- name: reload systemd user
+  command: systemctl --user daemon-reload
+  become: true
+  become_user: "{{ username }}"
