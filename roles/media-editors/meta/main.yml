@@ -1,0 +1,5 @@
+---
+dependencies:
+  - { role: 'gimp',     tags: 'gimp' }
+  - { role: 'openshot', tags: 'openshot' }
+ #- { role: 'kdenlive', tags: 'kdenlive' }
