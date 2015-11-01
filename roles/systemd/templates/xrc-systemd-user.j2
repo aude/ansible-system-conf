@@ -1,4 +1,4 @@
-#!/bin/sh
+# vim: filetype=sh
 
 # import variables for X dependent services
 systemctl --user import-environment DISPLAY XAUTHORITY
@@ -12,4 +12,4 @@ while read i ; do
     if [ -n "$i" ] ; then
         systemctl --user start $i
     fi
-done < ~/{{ systemd.user.run_after_x.directory }}/{{ systemd.user.run_after_x.file }}
+done < $HOME/{{ systemd.user.run_after_x.directory }}/{{ systemd.user.run_after_x.file }}
