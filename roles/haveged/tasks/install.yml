@@ -1,4 +1,4 @@
 ---
 - name: "install"
-  action: "{{ pkg_manager }} name= state=present"
+  action: "{{ pkg_manager }} name=haveged state=present"
   notify: enable and run haveged
