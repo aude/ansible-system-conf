@@ -1,3 +1,10 @@
 ---
 - name: "RedHat: install"
-  dnf: name="@Development Tools" state=present
+  dnf: name="{{ item }}" state=present
+  with_items:
+    - '@Development Tools'
+    - 'automake'
+    - 'gcc'
+    - 'gcc-c++'
+    - 'kernel-devel'
+    - 'cmake'
