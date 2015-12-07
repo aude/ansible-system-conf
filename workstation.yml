@@ -42,7 +42,8 @@
     - { role: color,            tags: ['system', 'color'] }
     - { role: shell,            tags: ['tools', 'shell'] }
     - { role: editor,           tags: ['tools', 'editor'] }
-    - { role: pkg-tools,        tags: ['tools', 'pkg', 'pkg-tools'] }
+    - { role: dev,              tags: ['tools', 'dev'] }
+    - { role: repo-tools,       tags: ['tools', 'pkg', 'repo-tools'] }
     - { role: cli-tools,        tags: ['tools', 'cli-tools'] }
     - { role: web-browsers,     tags: ['tools', 'web', 'web-browsers'] }
     - { role: codecs,           tags: ['media', 'codecs'] }

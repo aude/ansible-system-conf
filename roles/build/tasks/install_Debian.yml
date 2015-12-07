@@ -1,0 +1,3 @@
+---
+- name: "Debian: install"
+  apt: pkg=build-essential state=present
