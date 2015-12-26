@@ -1,2 +1,4 @@
 ---
 - name: 'configure'
+  template: src='dnscrypt-proxy.conf.j2' dest='/etc/dnscrypt-proxy.conf'
+  notify: reload dnscrypt_proxy

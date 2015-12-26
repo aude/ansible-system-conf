@@ -15,3 +15,7 @@ systemd:
     run_after_x:
       directory: .config/systemd/user
       file: run-after-x.conf
+
+dns:
+  dnscrypt_proxy:
+    port: 4053

@@ -1,0 +1,8 @@
+---
+- name: 'configure: main configuration'
+  template: src='unbound.conf.j2' dest='/etc/unbound/unbound.conf'
+  notify: reload unbound
+
+- name: 'configure: forward to dnscrypt-proxy'
+  template: src='dnscrypt-proxy.conf.j2' dest='/etc/unbound/conf.d/dnscrypt-proxy.conf'
+  notify: reload unbound
