@@ -1,3 +1,8 @@
 ---
 - name: 'resolv.conf: 127.0.0.1'
   template: mode=0444 owner=root group=root src=resolv.conf.j2 dest=/etc/resolv.conf
+  register: resolv_conf
+
+- name: 'resolv.conf: set immutable bit'
+  command: 'chattr +i /etc/resolv.conf'
+  when: resolv_conf.changed
