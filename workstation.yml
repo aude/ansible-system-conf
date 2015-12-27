@@ -9,17 +9,12 @@
     - "vars/default.yml"
 
   pre_tasks:
-    #- name: group roles by distribution
-    #  group_by: key=os_{{ ansible_distribution }}
-    #  tags: always
-
-    - name: get username
-      set_fact:
-        username: "{{ ansible_env['SUDO_USER'] }}"
-      tags: always
-      when: username is not defined
+   #- name: group roles by distribution
+   #  group_by: key=os_{{ ansible_distribution }}
+   #  tags: always
 
   roles:
+    - { role: getvars,          tags: ['always'], get: ['username'] }
     - { role: users,            tags: ['system', 'users'] }
     - { role: skel,             tags: ['user', 'skel'] }
     - { role: repos,            tags: ['system', 'pkg', 'repos'] }

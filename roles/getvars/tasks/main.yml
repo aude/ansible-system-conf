@@ -1,0 +1,6 @@
+---
+- include: get_username.yml
+  when: "'username' in get"
+
+- include: get_location.yml
+  when: "'location' in get"

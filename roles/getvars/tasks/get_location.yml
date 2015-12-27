@@ -1,0 +1,18 @@
+---
+- name: fetch location
+  uri:
+    url: 'http://ipinfo.io/loc'
+    return_content: yes
+  register: location
+
+- name: get latitude
+  set_fact:
+    latitude: "{{ location.content.split(',')[0] | trim }}"
+  tags: always
+  when: latitude is not defined
+
+- name: get longitude
+  set_fact:
+    longitude: "{{ location.content.split(',')[1] | trim }}"
+  tags: always
+  when: longitude is not defined
