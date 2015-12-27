@@ -1,3 +1,4 @@
 ---
 dependencies:
- #- { role: 'backup', tags: 'backup' }
+ #- { role: 'backup',   tags: 'backup' }
+  - { role: 'snapper',  tags: 'snapper' }
