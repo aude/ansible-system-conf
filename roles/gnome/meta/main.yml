@@ -1,0 +1,4 @@
+---
+dependencies:
+  - { role: 'nautilus', tags: 'nautilus' }
+  - { role: 'gnome-tweak-tool', tags: 'gnome-tweak-tool' }

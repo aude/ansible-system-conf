@@ -1,0 +1,6 @@
+---
+- include: install.yml
+- include: install_plugins_Fedora.yml
+  when: ansible_distribution == "Fedora"
+- include: install_plugins_Debian.yml
+  when: ansible_os_family == "Debian"

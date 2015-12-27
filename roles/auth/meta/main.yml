@@ -1,0 +1,5 @@
+---
+dependencies:
+  #- { role: 'gpg',  tags: 'gpg' }
+  #- { role: 'ssh',  tags: 'ssh' }
+  - { role: 'pass', tags: 'pass' }

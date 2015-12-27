@@ -3,9 +3,6 @@
   connection: local
   become: true
 
-  vars:
-    #username: 
-
   vars_files:
     - "vars/{{ ansible_os_family }}.yml"
     - "vars/{{ ansible_distribution }}.yml"
@@ -42,10 +39,17 @@
     - { role: color,            tags: ['system', 'color'] }
     - { role: shell,            tags: ['tools', 'shell'] }
     - { role: editor,           tags: ['tools', 'editor'] }
+    - { role: auth,             tags: ['tools', 'auth'] }
     - { role: dev,              tags: ['tools', 'dev'] }
     - { role: repo-tools,       tags: ['tools', 'pkg', 'repo-tools'] }
-    - { role: cli-tools,        tags: ['tools', 'cli-tools'] }
+    - { role: archive-tools,    tags: ['tools', 'archive-tools'] }
+    - { role: backup,           tags: ['tools', 'backup'] }
+    - { role: de,               tags: ['system', 'de'] }
+    - { role: device-tools,     tags: ['tools', 'disk', 'device-tools'] }
+    - { role: vm,               tags: ['tools', 'vm'] }
     - { role: web-browsers,     tags: ['tools', 'web', 'web-browsers'] }
+    - { role: mail,             tags: ['tools', 'web', 'mail'] }
+    - { role: im,               tags: ['tools', 'web', 'im'] }
     - { role: codecs,           tags: ['media', 'codecs'] }
     - { role: media-players,    tags: ['tools', 'media', 'media-players'] }
     - { role: media-editors,    tags: ['tools', 'media', 'media-editors'] }

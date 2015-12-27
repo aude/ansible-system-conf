@@ -1,3 +1,4 @@
 ---
 dependencies:
   - { role: 'firefox',  tags: 'firefox' }
+  - { role: 'midori',   tags: 'midori' }

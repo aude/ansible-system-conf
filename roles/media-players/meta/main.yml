@@ -1,5 +1,7 @@
 ---
 dependencies:
-  - { role: 'vlc',              tags: 'vlc' }
-  - { role: 'mpv',              tags: 'mpv' }
-  - { role: 'quodlibet',        tags: 'quodlibet' }
+  - { role: 'feh',          tags: 'feh' }
+  - { role: 'vlc',          tags: 'vlc' }
+  - { role: 'mpv',          tags: 'mpv' }
+  - { role: 'quodlibet',    tags: 'quodlibet' }
+  - { role: 'youtube-dl',   tags: 'youtube-dl' }
