@@ -3,4 +3,4 @@
   action: "{{ pkg_manager }} name={{ item }} state=present"
   with_items:
     - vcsh
-    - mr
+    - myrepos
