@@ -1,19 +1,22 @@
 ---
 - name: 'bootstrap: check if present'
-  stat: path="/home/{{ username }}/.config/vcsh/repo.d/{{ dotfiles.bootstrap.name }}.git"
+  stat: path="~/.config/vcsh/repo.d/{{ dotfiles.bootstrap.name }}.git"
+  become: true
+  become_user: "{{ username }}"
   register: dotfiles_bootstrap_dir
 
-- name: 'bootstrap: fetch dotfiles'
+- name: 'bootstrap: fetch'
   command: vcsh clone "{{ dotfiles.bootstrap.url }}" "{{ dotfiles.bootstrap.name }}"
   become: true
   become_user: "{{ username }}"
   when: dotfiles_bootstrap_dir.stat.exists == false
   register: dotfiles_bootstrap
 
-- name: 'update dotfiles'
-  command: mr up chdir="/home/{{ username }}"
+- name: 'update'
+  command: mr up chdir="~"
   become: true
   become_user: "{{ username }}"
+  # don't wait for update
   async: 30
   poll: 0
  #when: dotfiles_bootstrap.changed
