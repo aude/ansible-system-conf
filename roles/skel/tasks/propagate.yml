@@ -1,6 +1,9 @@
 ---
 - name: propagate /etc/skel
-  command: sudo -u {{ item }} sh -c 'rsync -r /etc/skel/ ~/'
+ #shell: rsync -r /etc/skel/ ~/
+  synchronize: archive=no compress=no links=yes recursive=yes set_remote_user=no src=/etc/skel/ dest=~/
+  become: yes
+  become_user: "{{ item }}"
   with_items:
     - "{{ username }}"
     - root
