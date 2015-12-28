@@ -21,3 +21,8 @@ systemd:
 dns:
   dnscrypt_proxy:
     port: 4053
+
+dotfiles:
+  bootstrap:
+    url: 'https://github.com/aude/dotfiles'
+    name: 'aude'

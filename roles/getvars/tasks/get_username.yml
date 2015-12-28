@@ -2,5 +2,4 @@
 - name: get username
   set_fact:
     username: "{{ ansible_env['SUDO_USER'] }}"
-  tags: always
   when: username is not defined

@@ -51,4 +51,4 @@
     - { role: office,           tags: ['tools', 'office'] }
     - { role: skel,             tags: ['user', 'skel'] }
 
-   #- { role: dotfiles,         tags: ['user', 'dotfiles'] }
+    - { role: dotfiles,         tags: ['user', 'dotfiles'] }

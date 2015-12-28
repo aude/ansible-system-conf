@@ -1,6 +1,6 @@
 ---
 - name: start redshift
-  command: sh -c 'systemctl --user import-environment DISPLAY && systemctl --user start redshift.service'
+  shell: systemctl --user import-environment DISPLAY && systemctl --user start redshift.service
   become: true
   become_user: "{{ username }}"
 
