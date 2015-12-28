@@ -3,6 +3,13 @@
   template: src='unbound.conf.j2' dest='/etc/unbound/unbound.conf'
   notify: reload unbound
 
+- name: 'configure: create conf directories'
+  file: path="/etc/unbound/{{ item }}" state=directory
+  with_items:
+    - conf.d
+    - keys.d
+    - local.d
+
 - name: 'configure: forward to dnscrypt-proxy'
   template: src='dnscrypt-proxy.conf.j2' dest='/etc/unbound/conf.d/dnscrypt-proxy.conf'
   notify: reload unbound
