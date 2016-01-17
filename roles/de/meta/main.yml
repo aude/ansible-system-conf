@@ -1,4 +1,0 @@
----
-dependencies:
- #- { role: 'gnome',    tags: 'gnome' }
- #- { role: 'xfce',     tags: 'xfce' }

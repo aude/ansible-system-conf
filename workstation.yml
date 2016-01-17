@@ -14,41 +14,41 @@
    #  tags: always
 
   roles:
-    - { role: getvars,          tags: ['always'], get: ['username'] }
-    - { role: users,            tags: ['system', 'users'] }
-    - { role: skel,             tags: ['user', 'skel'] }
-    - { role: repos,            tags: ['system', 'pkg', 'repos'] }
-    - { role: update,           tags: ['system', 'pkg', 'update'] }
-   #- { role: upgrade,          tags: ['system', 'pkg', 'upgrade'] }
-    - { role: dns,              tags: ['system', 'network', 'dns'] }
-    - { role: sudoers,          tags: ['system', 'sudoers'] }
-    - { role: boot,             tags: ['system', 'boot'] }
-    - { role: tty,              tags: ['system', 'tty'] }
-    - { role: keyboard,         tags: ['system', 'keyboard'] }
-    - { role: mod,              tags: ['system', 'mod'] }
-    - { role: drivers,          tags: ['system', 'drivers'] }
-    - { role: init,             tags: ['system', 'init'] }
-    - { role: firewall,         tags: ['system', 'firewall'] }
-    - { role: disk,             tags: ['system', 'disk'] }
-    - { role: rng,              tags: ['system', 'rng'] }
-    - { role: color,            tags: ['system', 'color'] }
-    - { role: shell,            tags: ['tools', 'shell'] }
-    - { role: editor,           tags: ['tools', 'editor'] }
-    - { role: auth,             tags: ['tools', 'auth'] }
-    - { role: dev,              tags: ['tools', 'dev'] }
-    - { role: repo-tools,       tags: ['tools', 'pkg', 'repo-tools'] }
-    - { role: archive-tools,    tags: ['tools', 'archive-tools'] }
-    - { role: backup,           tags: ['tools', 'backup'] }
-    - { role: de,               tags: ['system', 'de'] }
-    - { role: device-tools,     tags: ['tools', 'disk', 'device-tools'] }
-    - { role: vm,               tags: ['tools', 'vm'] }
-    - { role: web-browsers,     tags: ['tools', 'web', 'web-browsers'] }
-    - { role: mail,             tags: ['tools', 'web', 'mail'] }
-    - { role: im,               tags: ['tools', 'web', 'im'] }
-    - { role: codecs,           tags: ['media', 'codecs'] }
-    - { role: media-players,    tags: ['tools', 'media', 'media-players'] }
-    - { role: media-editors,    tags: ['tools', 'media', 'media-editors'] }
-    - { role: office,           tags: ['tools', 'office'] }
-    - { role: skel,             tags: ['user', 'skel'] }
+    - { role: getvars,              tags: ['always'], get: ['username'] }
+    - { role: users,                tags: ['system', 'users'] }
+    - { role: skel,                 tags: ['user', 'skel'] }
+    - { role: repos,                tags: ['system', 'pkg', 'repos'] }
+    - { role: update,               tags: ['system', 'pkg', 'update'] }
+   #- { role: upgrade,              tags: ['system', 'pkg', 'upgrade'] }
+    - { role: dns,                  tags: ['system', 'network', 'dns'] }
+    - { role: sudoers,              tags: ['system', 'sudoers'] }
+    - { role: boot,                 tags: ['system', 'boot'] }
+    - { role: tty,                  tags: ['system', 'tty'] }
+    - { role: keyboard,             tags: ['system', 'keyboard'] }
+    - { role: mod,                  tags: ['system', 'mod'] }
+    - { role: drivers,              tags: ['system', 'drivers'] }
+    - { role: init,                 tags: ['system', 'init'] }
+    - { role: firewall,             tags: ['system', 'firewall'] }
+    - { role: disk,                 tags: ['system', 'disk'] }
+    - { role: rng,                  tags: ['system', 'rng'] }
+    - { role: color,                tags: ['system', 'color'] }
+    - { role: shell,                tags: ['tools', 'shell'] }
+    - { role: editor,               tags: ['tools', 'editor'] }
+    - { role: auth,                 tags: ['tools', 'auth'] }
+    - { role: dev,                  tags: ['tools', 'dev'] }
+    - { role: repo-tools,           tags: ['tools', 'pkg', 'repo-tools'] }
+    - { role: archive-tools,        tags: ['tools', 'archive-tools'] }
+    - { role: backup,               tags: ['tools', 'backup'] }
+    - { role: desktop-environment,  tags: ['system', 'desktop-environment'] }
+    - { role: device-tools,         tags: ['tools', 'disk', 'device-tools'] }
+    - { role: vm,                   tags: ['tools', 'vm'] }
+    - { role: web-browsers,         tags: ['tools', 'web', 'web-browsers'] }
+    - { role: mail,                 tags: ['tools', 'web', 'mail'] }
+    - { role: im,                   tags: ['tools', 'web', 'im'] }
+    - { role: codecs,               tags: ['media', 'codecs'] }
+    - { role: media-players,        tags: ['tools', 'media', 'media-players'] }
+    - { role: media-editors,        tags: ['tools', 'media', 'media-editors'] }
+    - { role: office,               tags: ['tools', 'office'] }
+    - { role: skel,                 tags: ['user', 'skel'] }
 
-    - { role: dotfiles,         tags: ['user', 'dotfiles'] }
+    - { role: dotfiles,             tags: ['user', 'dotfiles'] }
