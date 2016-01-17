@@ -1,5 +1,6 @@
 ---
 dependencies:
+  - { role: 'langs',                tags: 'langs' }
   - { role: 'build-tools',          tags: ['build-tools', 'build'] }
   - { role: 'headers',              tags: 'headers' }
   - { role: 'ctags',                tags: 'ctags' }
