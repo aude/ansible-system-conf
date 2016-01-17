@@ -2,3 +2,13 @@
 - name: "install"
   action: "{{ pkg_manager }} name=unbound state=present"
   notify: enable and run unbound
+
+- name: "get unbound-control-setup path"
+  shell: which unbound-control-setup
+  ignore_errors: yes
+  register: unbound_control_setup_path
+
+# https://www.nlnetlabs.nl/bugs-script/show_bug.cgi?id=729
+- name: "Unbound bug 729: patch unbound-control-setup"
+  replace: dest="{{ unbound_control_setup_path.stdout }}" regexp='\\n' replace=''
+  when: unbound_control_setup_path.rc == 0
