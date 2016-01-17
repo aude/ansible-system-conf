@@ -5,6 +5,17 @@
   become_user: "{{ username }}"
   register: dotfiles_bootstrap_dir
 
+# would be much cooler with some `vcsh clone --force` stuff, but in the absence of that:
+- name: 'bootstrap: make space'
+  file: file="{{ item }}" state=absent
+  with_items:
+    - '~/.bash_profile'
+    - '~/.bashrc'
+    - '~/.zshrc'
+  become: true
+  become_user: "{{ username }}"
+  when: dotfiles_bootstrap_dir.stat.exists == false
+
 - name: 'bootstrap: fetch'
   command: vcsh clone "{{ dotfiles.bootstrap.url }}" "{{ dotfiles.bootstrap.name }}"
   become: true
