@@ -1,0 +1,6 @@
+---
+# we need some answers file and stuff to get this up and running
+#- name: Debian: install
+#  command: tasksel install --new-install "{{ item }}"
+#  with_items:
+#    - 'gnome-desktop'
