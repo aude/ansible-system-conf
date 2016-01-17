@@ -1,4 +1,9 @@
 ---
+- include: freetype_RedHat.yml
+  when: ansible_os_family == "RedHat"
+- include: freetype_Debian.yml
+  when: ansible_os_family == "Debian"
+
 - include: google_droid_sans_Fedora.yml
   when: ansible_distribution == "Fedora"
 - include: google_droid_sans_Debian.yml
