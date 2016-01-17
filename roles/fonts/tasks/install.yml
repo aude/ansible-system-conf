@@ -1,0 +1,6 @@
+---
+- include: google_droid_sans_Fedora.yml
+  when: ansible_distribution == "Fedora"
+- include: google_droid_sans_Debian.yml
+  when: ansible_os_family == "Debian"
+
