@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - { role: 'build',                tags: 'build' }
+  - { role: 'build-tools',          tags: ['build-tools', 'build'] }
   - { role: 'headers',              tags: 'headers' }
   - { role: 'ctags',                tags: 'ctags' }
   - { role: 'the_silver_searcher',  tags: 'the_silver_searcher' }
