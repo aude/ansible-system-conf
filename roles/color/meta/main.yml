@@ -1,3 +1,4 @@
 ---
 dependencies:
-  - { role: 'redshift', tags: ['eyestrain', 'redshift'] }
+  - { role: 'redshift',     tags: ['eyestrain', 'redshift'] }
+  - { role: 'solarized',    tags: ['eyestrain', 'solarized'] }

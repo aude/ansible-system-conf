@@ -1,0 +1,30 @@
+---
+- name: download and install executable
+  get_url: url='https://github.com/aude/console-solarized/raw/master/console-solarized' dest=/usr/local/bin/console-solarized force=yes
+
+- name: configure file permissions for executable
+  file: path=/usr/local/bin/console-solarized owner=root group=root mode=0755
+
+- name: download and install service file
+  get_url: url='https://github.com/aude/console-solarized/raw/master/console-solarized%40.service' dest='/usr/lib/systemd/system/console-solarized@.service' force=yes
+
+- name: configure file permissions for service file
+  file: path='/usr/lib/systemd/system/console-solarized@.service' owner=root group=root mode=0644
+
+- name: create directory for getty service configuration file
+  file: path='/etc/systemd/system/getty@.service.d' state=directory
+
+- name: download and install getty service configuration file
+  get_url: url='https://github.com/aude/console-solarized/raw/master/solarized.conf' dest='/etc/systemd/system/getty@.service.d/solarized.conf' force=yes
+
+- name: configure file permissions for getty service configuration file
+  file: path='/etc/systemd/system/getty@.service.d/solarized.conf' owner=root group=root mode=0644
+
+- name: download and install configuration file
+  get_url: url='https://github.com/aude/console-solarized/raw/master/console-solarized.conf' dest=/etc/console-solarized.conf force=yes
+
+- name: configure file permissions for configuration file
+  file: path=/etc/console-solarized.conf owner=root group=root mode=0644
+
+- name: configure Solarized theme
+  lineinfile: dest=/etc/console-solarized.conf regexp='^THEME=.*' line="THEME={{ solarized }}"
