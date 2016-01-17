@@ -40,6 +40,7 @@
     - { role: archive-tools,        tags: ['tools', 'archive-tools'] }
     - { role: backup,               tags: ['tools', 'backup'] }
     - { role: desktop-environment,  tags: ['system', 'desktop-environment'] }
+    - { role: terminal-emulator,    tags: ['tools', 'terminal-emulator'] }
     - { role: device-tools,         tags: ['tools', 'disk', 'device-tools'] }
     - { role: vm,                   tags: ['tools', 'vm'] }
     - { role: web-browsers,         tags: ['tools', 'web', 'web-browsers'] }
