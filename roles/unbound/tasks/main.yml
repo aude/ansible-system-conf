@@ -1,3 +1,5 @@
 ---
 - include: install.yml
 - include: configure.yml
+
+- meta: flush_handlers

@@ -5,3 +5,5 @@
   when: ansible_os_family == "Debian"
 
 - include: configure.yml
+
+- meta: flush_handlers

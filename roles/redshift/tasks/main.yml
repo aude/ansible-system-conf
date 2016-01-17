@@ -3,3 +3,5 @@
 - include: service.yml
 - include: enable.yml
 - include: configure.yml
+
+- meta: flush_handlers
