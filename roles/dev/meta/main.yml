@@ -3,5 +3,6 @@ dependencies:
   - { role: 'langs',                tags: 'langs' }
   - { role: 'build-tools',          tags: ['build-tools', 'build'] }
   - { role: 'headers',              tags: 'headers' }
+  - { role: 'libs',                 tags: 'libs' }
   - { role: 'ctags',                tags: 'ctags' }
   - { role: 'the_silver_searcher',  tags: 'the_silver_searcher' }
