@@ -7,7 +7,7 @@
 
 # would be much cooler with some `vcsh clone --force` stuff, but in the absence of that:
 - name: 'bootstrap: make space'
-  file: file="{{ item }}" state=absent
+  file: path="{{ item }}" state=absent
   with_items:
     - '~/.bash_profile'
     - '~/.bashrc'
