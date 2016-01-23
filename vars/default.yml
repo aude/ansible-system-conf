@@ -6,7 +6,7 @@ shell: /bin/zsh
 EDITOR: vim
 desktop_environment: gnome
 
-solarized: light
+solarized: dark
 
 redshift:
   temp_day: 6500
