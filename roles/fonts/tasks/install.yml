@@ -4,8 +4,22 @@
 - include: freetype_Debian.yml
   when: ansible_os_family == "Debian"
 
+- include: dejavu_Fedora.yml
+  when: ansible_distribution == "Fedora"
+- include: dejavu_Debian.yml
+  when: ansible_os_family == "Debian"
+
+- include: liberation_Fedora.yml
+  when: ansible_distribution == "Fedora"
+- include: liberation_Debian.yml
+  when: ansible_os_family == "Debian"
+
+- include: adobe_source_code_pro_Fedora.yml
+  when: ansible_distribution == "Fedora"
+- include: adobe_source_code_pro_Debian.yml
+  when: ansible_os_family == "Debian"
+
 - include: google_droid_sans_Fedora.yml
   when: ansible_distribution == "Fedora"
 - include: google_droid_sans_Debian.yml
   when: ansible_os_family == "Debian"
-

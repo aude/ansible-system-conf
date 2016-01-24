@@ -1,0 +1,5 @@
+---
+- name: 'Fedora: install Adobe Source Code Pro'
+  dnf: name="{{ item }}" state=present
+  with_items:
+    - 'adobe-source-code-pro-fonts'
