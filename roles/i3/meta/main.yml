@@ -1,0 +1,6 @@
+---
+dependencies:
+  - { role: 'dmenu',    tags: 'dmenu' }
+  - { role: 'dunst',    tags: 'dunst' }
+  - { role: 'dex',      tags: 'dunst' }
+  - { role: 'i3lock',   tags: 'i3lock' }
