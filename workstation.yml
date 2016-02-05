@@ -42,6 +42,7 @@
     - { role: desktop-environment,  tags: ['system', 'desktop-environment'] }
     - { role: terminal-emulator,    tags: ['tools', 'terminal-emulator'] }
     - { role: device-tools,         tags: ['tools', 'disk', 'device-tools'] }
+    - { role: net-tools,            tags: ['tools', 'net', 'network', 'net-tools'] }
     - { role: vm,                   tags: ['tools', 'vm'] }
     - { role: web-browsers,         tags: ['tools', 'web', 'web-browsers'] }
     - { role: mail,                 tags: ['tools', 'web', 'mail'] }
