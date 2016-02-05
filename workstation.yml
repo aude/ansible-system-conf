@@ -21,7 +21,7 @@
     - { role: update,               tags: ['system', 'pkg', 'update'] }
    #- { role: upgrade,              tags: ['system', 'pkg', 'upgrade'] }
     - { role: dns,                  tags: ['system', 'network', 'dns'] }
-    - { role: sudoers,              tags: ['system', 'sudoers'] }
+    - { role: sudo,                 tags: ['system', 'sudoers', 'sudo'] }
     - { role: boot,                 tags: ['system', 'boot'] }
     - { role: tty,                  tags: ['system', 'tty'] }
     - { role: keyboard,             tags: ['system', 'keyboard'] }
