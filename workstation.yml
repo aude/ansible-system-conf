@@ -36,6 +36,7 @@
     - { role: editor,               tags: ['tools', 'editor'] }
     - { role: auth,                 tags: ['tools', 'auth'] }
     - { role: dev,                  tags: ['tools', 'dev'] }
+    - { role: data-tools,           tags: ['tools', 'data-tools'] }
     - { role: repo-tools,           tags: ['tools', 'pkg', 'repo-tools'] }
     - { role: archive-tools,        tags: ['tools', 'archive-tools'] }
     - { role: backup,               tags: ['tools', 'backup'] }
