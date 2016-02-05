@@ -1,0 +1,3 @@
+---
+- name: 'FUSE: allow mounting user to control access control'
+  lineinfile: dest=/etc/fuse.conf regexp='^#?\s*user_allow_other$' line='user_allow_other'
