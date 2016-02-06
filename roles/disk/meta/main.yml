@@ -1,4 +1,5 @@
 ---
 dependencies:
   - { role: 'fs',       tags: 'fs' }
+  - { role: 'fstrim',   tags: 'fstrim' }
   - { role: 'gptfdisk', tags: 'gptfdisk' }
