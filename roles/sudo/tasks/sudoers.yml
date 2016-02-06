@@ -1,3 +1,7 @@
 ---
+- name: get username UID
+  command: id -u {{ username }}
+  register: username_uid
+
 - name: convenience
-  template: mode=0400 owner=root group=root src=convenience.j2 dest=/etc/sudoers.d/convenience_{{ username }}
+  template: mode=0400 owner=root group=root src=convenience.j2 dest=/etc/sudoers.d/convenience_{{ username_uid.stdout }}
