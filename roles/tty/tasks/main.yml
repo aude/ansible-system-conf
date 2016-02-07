@@ -1,2 +1,3 @@
 ---
-- include: autologin.yml
+# do not autologin nowadays
+#- include: autologin.yml
