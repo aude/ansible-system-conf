@@ -1,7 +1,7 @@
 ---
 #username: 
 
-xkb_options: caps:escape,terminate:ctrl_alt_bksp,altwin:alt_super_win,shift:both_capslock_cancel
+xkb_options: grp:win_space_toggle,caps:escape,terminate:ctrl_alt_bksp,altwin:alt_super_win,shift:both_capslock_cancel
 shell: /bin/zsh
 EDITOR: vim
 desktop_environment: gnome
