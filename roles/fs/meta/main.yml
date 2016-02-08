@@ -3,3 +3,4 @@ dependencies:
   - { role: 'fs',       tags: 'fs' }
   - { role: 'btrfs',    tags: 'btrfs' }
   - { role: 'sshfs',    tags: 'sshfs' }
+  - { role: 'bindfs',   tags: 'bindfs' }
