@@ -1,3 +1,4 @@
 ---
 dependencies:
   - { role: 'ruby', tags: 'ruby' }
+  - { role: 'php',  tags: 'php' }
