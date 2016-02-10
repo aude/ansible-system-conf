@@ -4,4 +4,4 @@
 - include: install_Debian.yml
   when: ansible_os_family == "Debian"
 
-- include: set-as-default.yml
+- include: wrap-startx.yml

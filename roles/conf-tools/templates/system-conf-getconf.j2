@@ -1,0 +1,9 @@
+#!/bin/sh
+
+for file_conf in "$HOME/{{ conf.file.user }}" '{{ conf.file.system }}'; do
+        if [ -r "$file_conf" ]; then
+                . "$file_conf"
+                break
+        fi
+done
+unset file_conf

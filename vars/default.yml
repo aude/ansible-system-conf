@@ -15,6 +15,14 @@ redshift:
 #latitude: 
 #longitude: 
 
+conf:
+  file:
+    system: /etc/xdg/system-conf
+    user: .config/system-conf
+  script:
+    sysconf: /usr/local/bin/system-conf-sysconf
+    getconf: /usr/local/bin/system-conf-getconf
+
 systemd:
   user:
     run_after_x:

@@ -1,0 +1,36 @@
+#!/bin/sh
+
+# if you want to set a conf, make desired variables available and call this script
+# eg.: sudo env DESKTOP_ENVIRONMENT='i3' /usr/local/bin/system-conf-sysconf
+
+# $1: file
+# $2: var
+# $3: value
+set_var_in_file() {
+	if ! grep "$2=" "$1" 2>&1 >/dev/null; then
+		echo "$2=$3" >> "$1"
+	else
+		sed -i "s/^#\?[[:space:]]*\($2=\).*/\1$3/" "$1"
+	fi
+}
+
+# prefer $WINDOW_MANAGER, fall back to $DESKTOP_ENVIRONMENT
+if [ -n "$WINDOW_MANAGER" ]; then
+	# RedHat
+	if [ -d '/etc/sysconfig' ]; then
+		set_var_in_file '/etc/sysconfig/desktop' 'PREFERRED' "$WINDOW_MANAGER"
+		set_var_in_file '/etc/sysconfig/desktop' 'DESKTOP' ''
+	# Debian
+	elif [ true ]; then
+		echo 'Make me'
+	fi
+elif [ -n "$DESKTOP_ENVIRONMENT" ]; then
+	# RedHat
+	if [ -d '/etc/sysconfig' ]; then
+		set_var_in_file '/etc/sysconfig/desktop' 'DESKTOP' "$DESKTOP_ENVIRONMENT"
+		set_var_in_file '/etc/sysconfig/desktop' 'PREFERRED' ''
+	# Debian
+	elif [ true ]; then
+		echo 'Make me'
+	fi
+fi

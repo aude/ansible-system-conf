@@ -1,0 +1,3 @@
+---
+- name: "configure desktop environment for user"
+  lineinfile: dest="/etc/skel/{{ conf.file.user }}" line="WINDOW_MANAGER=i3"

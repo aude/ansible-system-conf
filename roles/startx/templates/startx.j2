@@ -1,0 +1,7 @@
+#!/bin/sh
+
+[ -f '{{ conf.script.getconf }}' ] && . '{{ conf.script.getconf }}' || exit 1
+
+sudo env WINDOW_MANAGER="$WINDOW_MANAGER" DESKTOP_ENVIRONMENT="$DESKTOP_ENVIRONMENT" {{ conf.script.sysconf }}
+
+exec /usr/bin/startx
