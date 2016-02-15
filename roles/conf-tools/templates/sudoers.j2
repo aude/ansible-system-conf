@@ -1,3 +1,3 @@
 # Allow people in group wheel to run conf-tools passwordlessly
 Cmnd_Alias	CONF_TOOLS = {{ conf.script.sysconf }}
-%wheel	ALL=(ALL)	NOPASSWD: CONF_TOOLS
+%wheel	ALL=(ALL)	NOPASSWD: SETENV: CONF_TOOLS
