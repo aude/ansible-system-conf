@@ -1,5 +1,7 @@
 ---
 dependencies:
-  #- { role: 'gpg',  tags: 'gpg' }
-  #- { role: 'ssh',  tags: 'ssh' }
-  - { role: 'pass', tags: 'pass' }
+  - { role: 'authconfig',   tags: 'authconfig', when: "ansible_os_family == 'RedHat'"}
+  - { role: 'sudo',         tags: ['sudoers', 'sudo'] }
+ #- { role: 'gpg',          tags: 'gpg' }
+ #- { role: 'ssh',          tags: 'ssh' }
+  - { role: 'pass',         tags: 'pass' }

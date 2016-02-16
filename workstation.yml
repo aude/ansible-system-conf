@@ -22,7 +22,7 @@
    #- { role: upgrade,              tags: ['system', 'pkg', 'upgrade'] }
     - { role: conf-tools,           tags: ['system', 'user', 'conf', 'conf-tools'] }
     - { role: dns,                  tags: ['system', 'network', 'dns'] }
-    - { role: sudo,                 tags: ['system', 'sudoers', 'sudo'] }
+    - { role: auth,                 tags: ['system', 'tools', 'auth'] }
     - { role: boot,                 tags: ['system', 'boot'] }
     - { role: tty,                  tags: ['system', 'tty'] }
     - { role: keyboard,             tags: ['system', 'kbd', 'keyboard'] }
@@ -35,7 +35,6 @@
     - { role: color,                tags: ['system', 'color'] }
     - { role: shell,                tags: ['tools', 'shell'] }
     - { role: editor,               tags: ['tools', 'editor'] }
-    - { role: auth,                 tags: ['tools', 'auth'] }
     - { role: dev,                  tags: ['tools', 'dev'] }
     - { role: data-tools,           tags: ['tools', 'data-tools'] }
     - { role: repo-tools,           tags: ['tools', 'pkg', 'repo-tools'] }

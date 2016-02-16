@@ -1,0 +1,3 @@
+---
+- name: "disable fingerprint sensor usage"
+  lineinfile: dest='/etc/sysconfig/authconfig' regexp='^USEFPRINTD=.*' line='USEFPRINTD=no'
