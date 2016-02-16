@@ -1,5 +1,5 @@
 ---
-username: aude
+#username: 
 
 xkb_options: grp:win_space_toggle,caps:escape,terminate:ctrl_alt_bksp,shift:both_capslock_cancel
 shell: /bin/zsh
