@@ -1,0 +1,3 @@
+---
+- name: "RedHat: install"
+  apt: pkg=dex state=present
