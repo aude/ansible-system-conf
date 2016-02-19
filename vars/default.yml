@@ -23,12 +23,6 @@ conf:
     sysconf: /usr/local/bin/system-conf-sysconf
     getconf: /usr/local/bin/system-conf-getconf
 
-systemd:
-  user:
-    run_after_x:
-      directory: .config/systemd/user
-      file: run-after-x.conf
-
 dns:
   dnscrypt_proxy:
     port: 4053

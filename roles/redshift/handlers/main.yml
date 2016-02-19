@@ -1,10 +1,20 @@
 ---
-- name: start redshift
-  shell: systemctl --user import-environment DISPLAY && systemctl --user start redshift.service
+- name: stop redshift
+  shell: 'pkill -u "$(whoami)" redshift'
   become: true
   become_user: "{{ username }}"
 
-- name: reload redshift
-  command: systemctl --user reload redshift.service
+- name: start redshift
+  shell: 'nohup redshift -r & > /dev/null'
   become: true
   become_user: "{{ username }}"
+
+- name: restart redshift
+  command: echo a
+  notify:
+    - stop redshift
+    - start redshift
+
+- name: reload redshift
+  command: echo a
+  notify: restart redshift
