@@ -1,0 +1,9 @@
+#!/bin/sh
+
+for gpg in 'gpg2' 'gpg'; do
+	path=$(command -v "$gpg" 2>/dev/null) && [ "$path" != "$0" ] || continue
+	exec "$path" "$@"
+done
+
+echo "$0: no gpg installed ..."
+exit 1

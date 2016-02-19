@@ -1,0 +1,8 @@
+---
+- include: install_Fedora.yml
+  when: ansible_distribution == "Fedora"
+- include: install_Debian.yml
+  when: ansible_os_family == "Debian"
+
+- include: wrapper.yml
+- include: agent.yml

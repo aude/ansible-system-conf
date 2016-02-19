@@ -1,0 +1,8 @@
+---
+- name: create systemd gpg-agent service file
+  template: src=gpg-agent.service.j2 dest=/etc/systemd/user/gpg-agent.service
+
+- name: 'enable agent for users: create directory'
+  file: dest=/etc/skel/.config/systemd/user/default.target.wants state=directory
+- name: 'enable agent for users: create symlink'
+  file: src=/etc/systemd/user/gpg-agent.service dest=/etc/skel/.config/systemd/user/default.target.wants/gpg-agent.service state=link

@@ -1,0 +1,3 @@
+---
+- name: 'install wrapper'
+  template: mode=0555 owner=root group=root src=wrapper.j2 dest=/usr/local/bin/gpg
