@@ -2,5 +2,5 @@
 dependencies:
   - { role: 'dmenu',    tags: 'dmenu' }
   - { role: 'dunst',    tags: 'dunst' }
-  - { role: 'dex',      tags: 'dunst' }
+  - { role: 'dex',      tags: 'dex' }
   - { role: 'i3lock',   tags: 'i3lock' }
