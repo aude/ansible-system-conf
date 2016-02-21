@@ -3,5 +3,8 @@
   command: id -u {{ username }}
   register: username_uid
 
-- name: convenience
-  template: mode=0400 owner=root group=root src=convenience.j2 dest=/etc/sudoers.d/convenience_{{ username_uid.stdout }}
+- name: 'sudoers: user convenience'
+  template: mode=0400 owner=root group=root src=user.j2 dest=/etc/sudoers.d/system-conf_user_{{ username_uid.stdout }}
+
+- name: 'sudoers: general settings'
+  template: mode=0400 owner=root group=root src=general.j2 dest=/etc/sudoers.d/system-conf_general
