@@ -1,3 +1,6 @@
 ---
 - name: "RedHat: install"
   dnf: name=vim-X11 state=present
+
+- name: "RedHat: make `vimx` the preferred `vim`"
+  file: src=vimx dest=/usr/bin/vim state=link
