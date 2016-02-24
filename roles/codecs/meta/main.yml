@@ -1,3 +1,4 @@
 ---
 dependencies:
-  - { role: 'gstreamer',        tags: 'gstreamer' }
+  - { role: 'gstreamer',    tags: 'gstreamer' }
+  - { role: 'flac',         tags: 'flac' }
