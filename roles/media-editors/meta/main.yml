@@ -5,3 +5,5 @@ dependencies:
  #- { role: 'kdenlive', tags: 'kdenlive' }
   - { role: 'audacity', tags: 'audacity' }
   - { role: 'brasero',  tags: 'brasero' }
+  - { role: 'shntool',  tags: 'shntool' }
+  - { role: 'cuetools', tags: 'cuetools' }
