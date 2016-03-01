@@ -4,6 +4,8 @@ dependencies:
   - { role: 'openshot', tags: 'openshot' }
  #- { role: 'kdenlive', tags: 'kdenlive' }
   - { role: 'audacity', tags: 'audacity' }
+  - { role: 'ffmpeg',   tags: 'ffmpeg' }
   - { role: 'brasero',  tags: 'brasero' }
   - { role: 'shntool',  tags: 'shntool' }
   - { role: 'cuetools', tags: 'cuetools' }
+  - { role: 'scrot',    tags: 'scrot' }
