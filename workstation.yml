@@ -40,7 +40,8 @@
     - { role: repo-tools,           tags: ['tools', 'pkg', 'repo-tools'] }
     - { role: archive-tools,        tags: ['tools', 'archive-tools'] }
     - { role: backup,               tags: ['tools', 'backup'] }
-    - { role: desktop-environment,  tags: ['system', 'desktop-environment'] }
+    - { role: desktop-environment,  tags: ['system', 'de', 'desktop-environment'] }
+    - { role: x-tools,              tags: ['tools', 'x', 'x-tools'] }
     - { role: terminal-emulator,    tags: ['tools', 'terminal-emulator'] }
     - { role: device-tools,         tags: ['tools', 'disk', 'device-tools'] }
     - { role: net-tools,            tags: ['tools', 'net', 'network', 'net-tools'] }
