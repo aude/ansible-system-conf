@@ -26,6 +26,7 @@
     - { role: boot,                 tags: ['system', 'boot'] }
     - { role: tty,                  tags: ['system', 'tty'] }
     - { role: keyboard,             tags: ['system', 'kbd', 'keyboard'] }
+    - { role: mouse,                tags: ['system', 'touchpad', 'pointer', 'mouse'] }
     - { role: mod,                  tags: ['system', 'mod'] }
     - { role: drivers,              tags: ['system', 'drivers'] }
     - { role: init,                 tags: ['system', 'init'] }

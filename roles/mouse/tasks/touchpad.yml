@@ -1,0 +1,3 @@
+---
+- name: 'configuring touchpad for X, eg. natural scrolling'
+  template: mode=0444 owner=root group=root src=touchpad.conf.j2 dest=/etc/X11/xorg.conf.d/30-touchpad.conf
