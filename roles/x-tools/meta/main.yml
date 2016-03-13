@@ -1,0 +1,4 @@
+---
+dependencies:
+  - { role: 'startx',   tags: 'startx' }
+  - { role: 'xdotool',  tags: 'xdotool' }
