@@ -1,4 +1,5 @@
 ---
 dependencies:
-  - { role: 'startx',   tags: 'startx' }
-  - { role: 'xdotool',  tags: 'xdotool' }
+  - { role: 'startx',       tags: 'startx' }
+  - { role: 'xdotool',      tags: 'xdotool' }
+  - { role: 'xbacklight',   tags: 'xbacklight' }
