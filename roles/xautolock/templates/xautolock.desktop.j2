@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version=1.0
+Name=Xautolock
+Comment=Lock X at inactivity
+Exec=xautolock -time "{{ autolock.time }}" -locker "{{ autolock.locker }}" -secure
+Type=Application
+Categories=Utility;
+NoDisplay=true

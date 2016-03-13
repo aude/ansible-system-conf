@@ -3,3 +3,4 @@ dependencies:
   - { role: 'startx',       tags: 'startx' }
   - { role: 'xdotool',      tags: 'xdotool' }
   - { role: 'xbacklight',   tags: 'xbacklight' }
+  - { role: 'xautolock',    tags: 'xautolock' }
