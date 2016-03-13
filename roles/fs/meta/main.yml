@@ -4,3 +4,4 @@ dependencies:
   - { role: 'btrfs',    tags: 'btrfs' }
   - { role: 'sshfs',    tags: 'sshfs' }
   - { role: 'bindfs',   tags: 'bindfs' }
+  - { role: 'exfat',    tags: 'exfat' }
