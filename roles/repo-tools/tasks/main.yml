@@ -1,7 +1,7 @@
 ---
 - include: install.yml
-- include: install_RedHat.yml
-  when: ansible_os_family == "RedHat"
+- include: install_Fedora.yml
+  when: ansible_os_distribution == "Fedora"
 - include: install_Debian.yml
   when: ansible_os_family == "Debian"
 

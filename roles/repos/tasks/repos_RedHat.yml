@@ -8,3 +8,6 @@
   with_items:
     - "http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm"
   when: added_rpmfusion.stat.exists == false
+
+- name: 'OVMF nightlies: add repositories'
+  get_url: url="http://www.kraxel.org/repos/firmware.repo" dest=/etc/yum.repos.d/kraxel-firmware.repo

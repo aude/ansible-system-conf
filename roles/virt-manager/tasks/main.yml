@@ -1,2 +1,6 @@
 ---
 - include: install.yml
+- include: auth_Fedora.yml
+  when: ansible_distribution == "Fedora"
+- include: auth_Debian.yml
+  when: ansible_os_family == "Debian"

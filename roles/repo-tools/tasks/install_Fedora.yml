@@ -1,5 +1,6 @@
 ---
-- name: 'RedHat: install'
+- name: 'Fedora: install'
   dnf: name={{ item }} state=present
   with_items:
+    - dnf-plugins-core
     - dnf-plugins-extras-rpmconf
