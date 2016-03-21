@@ -1,3 +1,4 @@
 ---
 dependencies:
   - { role: 'virt-manager', tags: 'virt-manager' }
+  - { role: 'vagrant',      tags: 'vagrant' }

@@ -1,0 +1,5 @@
+---
+- name: "Debian: install"
+  dnf: name="{{ item }}" state=present
+  with_items:
+    - vagrant
