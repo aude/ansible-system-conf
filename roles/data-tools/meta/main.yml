@@ -1,3 +1,4 @@
 ---
 dependencies:
   - { role: 'pv',   tags: 'pv' }
+  - { role: 'jq',   tags: 'jq' }
