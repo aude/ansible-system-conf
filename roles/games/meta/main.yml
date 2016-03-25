@@ -1,3 +1,4 @@
 ---
 dependencies:
-  - { role: 'nethack',  tags: 'nethack' }
+  - { role: 'emulators',    tags: 'emulators' }
+  - { role: 'nethack',      tags: 'nethack' }
