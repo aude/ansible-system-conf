@@ -1,0 +1,3 @@
+---
+- name: "Fedora: install"
+  dnf: name=android-tools state=present

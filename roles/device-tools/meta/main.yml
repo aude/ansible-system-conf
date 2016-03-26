@@ -1,3 +1,4 @@
 ---
 dependencies:
   - { role: 'gparted',  tags: 'gparted' }
+  - { role: 'adb',      tags: 'adb' }
