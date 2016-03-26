@@ -1,3 +1,3 @@
 ---
 - name: "Debian: install"
-  action: "{{ pkg_manager }} name=vbam state=present"
+  apt: name=vbam state=present
