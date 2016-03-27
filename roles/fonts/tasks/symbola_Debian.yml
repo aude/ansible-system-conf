@@ -1,0 +1,5 @@
+---
+- name: 'Debian: install Symbola'
+  apt: pkg="{{ item }}" state=present
+  with_items:
+    - 'fonts-symbola'

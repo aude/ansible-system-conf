@@ -23,3 +23,8 @@
   when: ansible_distribution == "Fedora"
 - include: google_droid_sans_Debian.yml
   when: ansible_os_family == "Debian"
+
+- include: symbola_Fedora.yml
+  when: ansible_distribution == "Fedora"
+- include: symbola_Debian.yml
+  when: ansible_os_family == "Debian"
