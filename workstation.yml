@@ -54,6 +54,7 @@
     - { role: media-players,        tags: ['tools', 'media', 'media-players'] }
     - { role: media-editors,        tags: ['tools', 'media', 'media-editors'] }
     - { role: games,                tags: ['games'] }
+    - { role: practice,             tags: ['practice'] }
     - { role: office,               tags: ['tools', 'office'] }
     - { role: fonts,                tags: ['system', 'fonts'] }
     - { role: skel,                 tags: ['user', 'skel'] }

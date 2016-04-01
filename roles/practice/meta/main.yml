@@ -1,0 +1,3 @@
+---
+dependencies:
+  - { role: 'touch-typing', tags: 'touch-typing' }
