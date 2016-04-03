@@ -1,3 +1,4 @@
 ---
 dependencies:
-  - { role: 'atool',    tags: 'atool' }
+  - { role: 'atool',        tags: 'atool' }
+  - { role: 'cabextract',   tags: 'cabextract' }
