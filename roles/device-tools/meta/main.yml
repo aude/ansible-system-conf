@@ -1,4 +1,5 @@
 ---
 dependencies:
-  - { role: 'gparted',  tags: 'gparted' }
-  - { role: 'adb',      tags: 'adb' }
+  - { role: 'gparted',          tags: 'gparted' }
+  - { role: 'smartmontools',    tags: ['S.M.A.R.T.', 'SMART', 'smart', 'smartmontools'] }
+  - { role: 'adb',              tags: 'adb' }
