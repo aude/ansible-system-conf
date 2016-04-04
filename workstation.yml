@@ -46,7 +46,7 @@
     - { role: terminal-emulator,    tags: ['tools', 'terminal-emulator'] }
     - { role: device-tools,         tags: ['tools', 'disk', 'device-tools'] }
     - { role: net-tools,            tags: ['tools', 'net', 'network', 'net-tools'] }
-    - { role: vm,                   tags: ['tools', 'vm'] }
+    - { role: virt,                 tags: ['tools', 'virt'] }
     - { role: web-browsers,         tags: ['tools', 'web', 'web-browsers'] }
     - { role: mail,                 tags: ['tools', 'web', 'mail'] }
     - { role: im,                   tags: ['tools', 'web', 'im'] }

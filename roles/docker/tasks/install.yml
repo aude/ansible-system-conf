@@ -1,0 +1,4 @@
+---
+- name: "install"
+  action: "{{ pkg_manager }} name=docker state=present"
+  notify: enable and run docker
