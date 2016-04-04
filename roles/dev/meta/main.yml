@@ -1,5 +1,6 @@
 ---
 dependencies:
+  - { role: 'vcs',                  tags: 'vcs' }
   - { role: 'langs',                tags: 'langs' }
   - { role: 'build-tools',          tags: ['build-tools', 'build'] }
   - { role: 'headers',              tags: 'headers' }
@@ -7,3 +8,4 @@ dependencies:
   - { role: 'ctags',                tags: 'ctags' }
   - { role: 'bootstrappers',        tags: 'bootstrappers' }
   - { role: 'the_silver_searcher',  tags: 'the_silver_searcher' }
+  - { role: 'stow',                 tags: 'stow' }
