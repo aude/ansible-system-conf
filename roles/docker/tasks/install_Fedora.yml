@@ -1,7 +1,0 @@
----
-- name: "install"
-  dnf: name="{{ item }}" state=present
-  notify: enable and run docker
-  with_items:
-    - docker
-    - docker-zsh-completion

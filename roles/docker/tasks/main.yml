@@ -1,5 +1,10 @@
 ---
-- include: install_Fedora.yml
-  when: ansible_distribution == "Fedora"
+- include: install_RedHat.yml
+  when: ansible_os_family == "RedHat"
 - include: install_generic.yml
-  when: ansible_distribution != "Fedora"
+  when: ansible_os_family != "RedHat"
+
+- include: auth_RedHat.yml
+  when: ansible_os_family == "RedHat"
+- include: auth_Debian.yml
+  when: ansible_os_family == "Debian"

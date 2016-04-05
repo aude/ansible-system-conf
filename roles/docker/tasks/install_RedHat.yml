@@ -1,0 +1,9 @@
+---
+- name: 'RedHat: add Docker repositories'
+  template: src=docker.repo.j2 dest=/etc/yum.repos.d/docker.repo
+
+- name: 'RedHat: install'
+  dnf: name="{{ item }}" state=present
+  notify: enable and run docker
+  with_items:
+    - docker-engine
