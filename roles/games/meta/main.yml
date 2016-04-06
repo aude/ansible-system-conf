@@ -2,3 +2,4 @@
 dependencies:
   - { role: 'emulators',    tags: 'emulators' }
   - { role: 'nethack',      tags: 'nethack' }
+  - { role: 'steam',        tags: 'steam' }

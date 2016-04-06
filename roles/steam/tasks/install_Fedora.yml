@@ -1,0 +1,13 @@
+---
+- name: 'Fedora: add Steam repositories'
+  get_url: url="http://negativo17.org/repos/fedora-steam.repo" dest=/etc/yum.repos.d/fedora-steam.repo
+
+- name: 'Fedora: install with native runtime'
+  dnf: name="{{ item }}" state=present
+  with_items:
+   #- steam
+    # go for native runtime as long as we can
+    #   we'll need to fix some missing libraries for that
+    - steam-noruntime
+
+- include: fix_missing_libraries_Fedora.yml
