@@ -1,0 +1,3 @@
+---
+- name: "install"
+  action: "{{ pkg_manager }} name=p7zip state=present"
