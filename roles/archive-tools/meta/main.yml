@@ -1,5 +1,6 @@
 ---
 dependencies:
   - { role: 'atool',        tags: 'atool' }
-  - { role: 'p7zip',        tags: 'p7zip' }
+  - { role: 'p7zip',        tags: ['7z', 'p7zip'] }
+  - { role: 'unar',         tags: ['rar', 'unar'] }
   - { role: 'cabextract',   tags: 'cabextract' }
