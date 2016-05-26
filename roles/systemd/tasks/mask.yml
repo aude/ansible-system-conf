@@ -1,0 +1,5 @@
+---
+- name: "mask (force disable) unwanted units"
+  file: src=/dev/null dest="/etc/systemd{{ item }}" state=link
+  with_items:
+    - /system/NetworkManager-wait-online.service
