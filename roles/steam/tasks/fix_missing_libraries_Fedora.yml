@@ -2,5 +2,5 @@
 - name: 'Fedora: fix missing libraries: Hyper Light Drifter'
   file: src="{{ item.src }}" dest="{{ item.dest }}" state=link
   with_items:
-    - { src: 'libcrypto.so.1.0.2g', dest: '/usr/lib/libcrypto.so.1.0.0' }
-    - { src: 'libssl.so.1.0.2g', dest: '/usr/lib/libssl.so.1.0.0' }
+    - { src: 'libcrypto.so.1.0.2h', dest: '/usr/lib/libcrypto.so.1.0.0' }
+    - { src: 'libssl.so.1.0.2h', dest: '/usr/lib/libssl.so.1.0.0' }
