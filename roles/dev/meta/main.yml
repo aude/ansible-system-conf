@@ -5,6 +5,7 @@ dependencies:
   - { role: 'build-tools',          tags: ['build-tools', 'build'] }
   - { role: 'headers',              tags: 'headers' }
   - { role: 'libs',                 tags: 'libs' }
+  - { role: 'linters',              tags: ['linters', 'lint'] }
   - { role: 'ctags',                tags: 'ctags' }
   - { role: 'bootstrappers',        tags: 'bootstrappers' }
   - { role: 'the_silver_searcher',  tags: 'the_silver_searcher' }
