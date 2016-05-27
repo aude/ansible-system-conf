@@ -8,3 +8,6 @@
   with_items:
     - docker-engine
     - docker-compose
+
+- name: 'RedHat: install ZSH completion'
+  file: src=../vendor-completions dest=/usr/share/zsh/site-functions/_docker state=link
