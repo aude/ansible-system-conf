@@ -2,6 +2,6 @@
 - include: install.yml
 
 - include: grml_generic.yml
-  when: ansible_os_family != "Debian"
+  when: ansible_distribution != "Debian"
 - include: grml_Debian.yml
-  when: ansible_os_family == "Debian"
+  when: ansible_distribution == "Debian"

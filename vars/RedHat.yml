@@ -1,9 +1,0 @@
----
-pkg_manager: 'dnf'
-
-extra_groups: 'wheel'
-
-dnscrypt_proxy:
-  copr:
-    name:       'spartacus06'
-    project:    'dnscrypt-proxy'

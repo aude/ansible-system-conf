@@ -1,7 +1,7 @@
 ---
 - name: "Debian: install systemd user service file"
   template: src=redshift.service.j2 dest='/etc/systemd/user/redshift.service'
-  when: ansible_os_family == "Debian"
+  when: ansible_distribution == "Debian"
 
 - name: "install systemd user service file override directory"
   file: path='/etc/systemd/user/redshift.service.d' state=directory

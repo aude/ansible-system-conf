@@ -4,9 +4,8 @@
   become: true
 
   vars_files:
-    - "vars/{{ ansible_os_family }}.yml"
-    - "vars/{{ ansible_distribution }}.yml"
     - "vars/default.yml"
+    - "vars/{{ ansible_distribution }}.yml"
 
   pre_tasks:
    #- name: group roles by distribution
