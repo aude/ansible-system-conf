@@ -1,5 +1,2 @@
 ---
-- include: repos_RedHat.yml
-  when: ansible_os_family == "RedHat"
-- include: repos_Debian.yml
-  when: ansible_os_family == "Debian"
+- include: repos_{{ ansible_distribution }}.yml

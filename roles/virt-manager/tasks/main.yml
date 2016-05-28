@@ -1,9 +1,3 @@
 ---
-- include: install_RedHat.yml
-  when: ansible_os_family == "RedHat"
-- include: install_Debian.yml
-  when: ansible_os_family == "Debian"
-- include: auth_Fedora.yml
-  when: ansible_distribution == "Fedora"
-- include: auth_Debian.yml
-  when: ansible_os_family == "Debian"
+- include: install_{{ ansible_distribution }}.yml
+- include: auth_{{ ansible_distribution }}.yml

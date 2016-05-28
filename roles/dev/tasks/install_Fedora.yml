@@ -1,5 +1,5 @@
 ---
-- name: 'RedHat: install dev tools'
+- name: 'Fedora: install dev tools'
   dnf: name="{{ item }}" state=present
   with_items:
     - devscripts

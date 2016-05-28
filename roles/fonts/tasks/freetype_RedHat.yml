@@ -1,3 +1,0 @@
----
-- name: 'RedHat: install freetype with patented improvements'
-  dnf: name=freetype-freeworld state=present
