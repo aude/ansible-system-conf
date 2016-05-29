@@ -1,5 +1,5 @@
 ---
-- name: "Fedora: install"
+- name: 'Fedora: install'
   dnf: name="{{ item }}" state=present
   with_items:
     - 'python-devel'

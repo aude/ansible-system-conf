@@ -1,6 +1,6 @@
 ---
-- name: "configure window manager for user"
-  lineinfile: dest="/etc/skel/{{ conf.file.user }}" regexp="^WINDOW_MANAGER=.*" line="WINDOW_MANAGER=i3"
+- name: 'configure window manager for user'
+  lineinfile: dest="/etc/skel/{{ conf.file.user }}" regexp='^WINDOW_MANAGER=.*' line='WINDOW_MANAGER=i3'
 
-- name: "unset desktop environment for user"
-  lineinfile: dest="/etc/skel/{{ conf.file.user }}" regexp="^DESKTOP_ENVIRONMENT=.*" line="DESKTOP_ENVIRONMENT="
+- name: 'unset desktop environment for user'
+  lineinfile: dest="/etc/skel/{{ conf.file.user }}" regexp='^DESKTOP_ENVIRONMENT=.*' line='DESKTOP_ENVIRONMENT='

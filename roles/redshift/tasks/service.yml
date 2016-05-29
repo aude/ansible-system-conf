@@ -1,12 +1,12 @@
 ---
-- name: "Debian: install systemd user service file"
+- name: 'Debian: install systemd user service file'
   template: src=redshift.service.j2 dest='/etc/systemd/user/redshift.service'
-  when: ansible_distribution == "Debian"
+  when: ansible_distribution == 'Debian'
 
-- name: "install systemd user service file override directory"
+- name: 'install systemd user service file override directory'
   file: path='/etc/systemd/user/redshift.service.d' state=directory
 
-- name: "install systemd user service file \"no transition\" override"
+- name: 'install systemd user service file "no transition" override'
   template: src=notransition.conf.j2 dest='/etc/systemd/user/redshift.service.d/notransition.conf'
 
 #- notify: reload systemd user

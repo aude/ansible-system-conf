@@ -1,6 +1,6 @@
 ---
 dependencies:
-  - { role: 'authconfig',   tags: 'authconfig',         when: "ansible_distribution == 'Fedora'"}
+  - { role: 'authconfig',   tags: 'authconfig',         when: 'ansible_distribution == "Fedora"'}
   - { role: 'sudo',         tags: ['sudoers', 'sudo'] }
   - { role: 'gnupg',        tags: ['gpg', 'gnupg'] }
  #- { role: 'ssh',          tags: 'ssh' }

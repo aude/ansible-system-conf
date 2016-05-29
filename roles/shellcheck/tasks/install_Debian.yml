@@ -1,3 +1,3 @@
 ---
-- name: "Debian: install"
+- name: 'Debian: install'
   apt: name=shellcheck state=present

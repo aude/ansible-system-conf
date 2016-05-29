@@ -1,5 +1,5 @@
 ---
-- name: "install"
+- name: 'install'
   action: "{{ pkg_manager }} name={{ item }} state=present"
   with_items:
     - fuse-exfat

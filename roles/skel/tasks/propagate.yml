@@ -7,7 +7,7 @@
     links: yes
     recursive: yes
     rsync_opts:
-      - "--update"
+      - '--update'
     set_remote_user: no
     times: yes
     src: /etc/skel/

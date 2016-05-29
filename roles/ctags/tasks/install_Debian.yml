@@ -1,3 +1,3 @@
 ---
-- name: "Debian: install"
+- name: 'Debian: install'
   apt: pkg=exuberant-ctags state=present

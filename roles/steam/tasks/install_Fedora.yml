@@ -1,6 +1,6 @@
 ---
 - name: 'Fedora: add Steam repositories'
-  get_url: url="http://negativo17.org/repos/fedora-steam.repo" dest=/etc/yum.repos.d/fedora-steam.repo
+  get_url: url='http://negativo17.org/repos/fedora-steam.repo' dest=/etc/yum.repos.d/fedora-steam.repo
 
 - name: 'Fedora: install with native runtime'
   dnf: name="{{ item }}" state=present

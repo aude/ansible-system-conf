@@ -1,5 +1,5 @@
 ---
 dependencies:
-  - { role: 'i3',       tags: 'i3',     when: "desktop_environment == 'i3'" }
-  - { role: 'gnome',    tags: 'gnome',  when: "desktop_environment == 'gnome'" }
-  - { role: 'xfce',     tags: 'xfce',   when: "desktop_environment == 'xfce'" }
+  - { role: 'i3',       tags: 'i3',     when: 'desktop_environment == "i3"' }
+  - { role: 'gnome',    tags: 'gnome',  when: 'desktop_environment == "gnome"' }
+  - { role: 'xfce',     tags: 'xfce',   when: 'desktop_environment == "xfce"' }
