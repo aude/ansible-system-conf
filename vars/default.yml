@@ -1,6 +1,4 @@
 ---
-#username: 
-
 # enable when upstream X-tool bug is fixed
 #xkb_options: grp:win_space_toggle,caps:escape,terminate:ctrl_alt_bksp,shift:both_capslock_cancel
 xkb_options: caps:escape,terminate:ctrl_alt_bksp,shift:both_capslock_cancel
@@ -17,9 +15,6 @@ redshift:
 autolock:
   time: 30
   locker: i3lock -d
-
-#latitude: 
-#longitude: 
 
 conf:
   file:
