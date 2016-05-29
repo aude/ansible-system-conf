@@ -1,3 +1,3 @@
 ---
 - name: 'Debian: install'
-  apt: pkg=vim-gtk state=present
+  apt: name=vim-gtk state=present

@@ -1,4 +1,4 @@
 ---
 - name: 'Debian: install'
-  apt: pkg='dnscrypt-proxy' state=present
+  apt: name='dnscrypt-proxy' state=present
   notify: enable and run dnscrypt_proxy
