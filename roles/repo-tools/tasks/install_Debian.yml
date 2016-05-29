@@ -1,4 +1,4 @@
 ---
 - name: 'Debian: install apt-file'
-  apt: name=apt-file state=present
+  package: name=apt-file state=present
   notify: update apt-file cache

@@ -1,6 +1,6 @@
 ---
 - name: 'Fedora: install DejaVu'
-  dnf: name="{{ item }}" state=present
+  package: name="{{ item }}" state=present
   with_items:
     - 'dejavu-sans-fonts'
     - 'dejavu-sans-mono-fonts'

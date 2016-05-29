@@ -1,3 +1,3 @@
 ---
 - name: 'Grml: install'
-  apt: name=grml-etc-core state=present
+  package: name=grml-etc-core state=present

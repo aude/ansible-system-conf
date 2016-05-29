@@ -8,5 +8,5 @@
   when: added_dnscrypt_proxy.stat.exists == false
 
 - name: 'Fedora: install'
-  dnf: name='dnscrypt-proxy' state=present
+  package: name='dnscrypt-proxy' state=present
   notify: enable and run dnscrypt_proxy

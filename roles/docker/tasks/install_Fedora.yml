@@ -3,7 +3,7 @@
   template: src=docker.repo.j2 dest=/etc/yum.repos.d/docker.repo
 
 - name: 'Fedora: install'
-  dnf: name="{{ item }}" state=present
+  package: name="{{ item }}" state=present
   notify: enable and run docker
   with_items:
     - docker-engine

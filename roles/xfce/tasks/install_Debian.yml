@@ -1,9 +1,9 @@
 ---
 - name: 'Debian: install Xfce'
-  apt: name=xfce4 state=latest
+  package: name=xfce4 state=latest
 
 - name: 'Debian: install Xfce goodies'
-  apt: name=xfce4-goodies state=latest
+  package: name=xfce4-goodies state=latest
 
 - name: 'Debian: install Xfce whisker menu'
-  apt: name=xfce4-whiskermenu-plugin state=latest
+  package: name=xfce4-whiskermenu-plugin state=latest

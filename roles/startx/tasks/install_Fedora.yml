@@ -1,3 +1,3 @@
 ---
 - name: 'Fedora: install'
-  dnf: name=xorg-x11-xinit state=present
+  package: name=xorg-x11-xinit state=present

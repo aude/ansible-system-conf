@@ -1,3 +1,3 @@
 ---
 - name: 'Fedora: install'
-  dnf: name=vbam-gtk state=present
+  package: name=vbam-gtk state=present

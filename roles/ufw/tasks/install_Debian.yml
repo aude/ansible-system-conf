@@ -1,4 +1,4 @@
 ---
 - name: 'Debian: install'
-  apt: name=gufw state=present
+  package: name=gufw state=present
   notify: enable
