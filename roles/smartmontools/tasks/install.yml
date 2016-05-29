@@ -1,3 +1,3 @@
 ---
 - name: 'install'
-  action: "{{ pkg_manager }} name=smartmontools state=present"
+  package: name=smartmontools state=present

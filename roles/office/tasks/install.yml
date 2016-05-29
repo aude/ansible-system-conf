@@ -1,6 +1,6 @@
 ---
 - name: 'install LibreOffice'
-  action: "{{ pkg_manager }} name={{ item }} state=present"
+  package: name="{{ item }}" state=present
   with_items:
     - libreoffice-writer
     - libreoffice-calc

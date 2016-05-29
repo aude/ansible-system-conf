@@ -1,3 +1,3 @@
 ---
 - name: 'install'
-  action: "{{ pkg_manager }} name=xdotool state=present"
+  package: name=xdotool state=present
