@@ -1,14 +1,7 @@
 ---
 - name: 'Fedora: install'
   # switch to langpacks-<langcode> when Fedora 24 is released
-  package: name="{{ item }}" state=present
-  with_items:
-    - hunspell-nb
-    - hyphen-nb
-    - mythes-nb
-    - libreoffice-langpack-nb
-    - hunspell-en
-    - hunspell-en-GB
-    - hyphen-en
-    - mythes-en
-    - libreoffice-langpack-en
+  package: name="{{ item[1] }}-{{ item[0] }}" state=present
+  with_nested:
+    - "{{ langpacks }}"
+    - [ 'hunspell', 'hyphen', 'mythes', 'libreoffice-langpack' ]

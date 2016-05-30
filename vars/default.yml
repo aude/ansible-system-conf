@@ -16,6 +16,10 @@ autolock:
   time: 30
   locker: i3lock -d
 
+langpacks:
+  - nb
+  - en
+
 conf:
   file:
     system: /etc/xdg/system-conf
