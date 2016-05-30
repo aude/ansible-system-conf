@@ -1,9 +1,1 @@
 ---
-- name: 'Grml: add repositories'
-  apt_repository: repo='{{ item }}'
-  with_items:
-  - 'deb http://deb.grml.org/ grml-stable main'
-  - 'deb-src http://deb.grml.org/ grml-stable main'
-
-- name: 'Grml: add key'
-  apt_key: keyserver='hkp://pool.sks-keyservers.net:11371' id='709BCE51568573EBC160E590F61E2E7CECDEA787'
