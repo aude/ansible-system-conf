@@ -12,6 +12,7 @@
     - '~/.bash_profile'
     - '~/.bashrc'
     - '~/.zshrc'
+    - '~/.gnupg/gpg.conf'
   become: true
   become_user: "{{ username }}"
   when: dotfiles_bootstrap_dir.stat.exists == false
