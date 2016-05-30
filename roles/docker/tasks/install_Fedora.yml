@@ -11,3 +11,5 @@
 
 - name: 'Fedora: install ZSH completion'
   file: src=../vendor-completions dest=/usr/share/zsh/site-functions/_docker state=link
+
+- meta: flush_handlers
