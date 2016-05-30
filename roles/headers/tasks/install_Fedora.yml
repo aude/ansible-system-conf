@@ -2,6 +2,7 @@
 - name: 'Fedora: install'
   package: name="{{ item }}" state=present
   with_items:
+    - 'kernel-devel'
     - 'python-devel'
     - 'ruby-devel'
     - 'boost-devel'
