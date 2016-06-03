@@ -15,7 +15,7 @@
   roles:
     - { role: getvars,              tags: ['always'], get: ['username'] }
     - { role: users,                tags: ['system', 'users'] }
-    - { role: skel,                 tags: ['user', 'skel'] }
+    - { role: skel,                 tags: ['user', 'skel_pre'] }
     - { role: repos,                tags: ['system', 'pkg', 'repos'] }
     - { role: update,               tags: ['system', 'pkg', 'update'] }
    #- { role: upgrade,              tags: ['system', 'pkg', 'upgrade'] }
@@ -57,6 +57,5 @@
     - { role: office,               tags: ['tools', 'office'] }
     - { role: fonts,                tags: ['system', 'fonts'] }
     - { role: langpacks,            tags: ['system', 'langpacks'] }
-    - { role: skel,                 tags: ['user', 'skel'] }
-
+    - { role: skel,                 tags: ['user', 'skel_post', 'skel'] }
     - { role: dotfiles,             tags: ['user', 'dotfiles'] }
