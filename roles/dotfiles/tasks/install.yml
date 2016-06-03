@@ -31,4 +31,4 @@
   # don't wait for update
   async: 30
   poll: 0
- #when: dotfiles_bootstrap.changed
+  when: dotfiles_bootstrap.changed
