@@ -1,2 +1,6 @@
 ---
-- include: "{{ ansible_distribution }}.yml"
+#- include: "{{ ansible_distribution }}.yml"
+# https://github.com/ansible/ansible/issues/13485
+
+- name: update apt-file cache
+  command: apt-file update

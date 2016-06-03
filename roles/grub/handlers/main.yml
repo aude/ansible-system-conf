@@ -1,2 +1,9 @@
 ---
-- include: "{{ ansible_distribution }}.yml"
+#- include: "{{ ansible_distribution }}.yml"
+# https://github.com/ansible/ansible/issues/13485
+
+- name: 'make GRUB BIOS config'
+  command: grub2-mkconfig -o /etc/grub2.cfg
+
+- name: 'make GRUB EFI config'
+  command: grub2-mkconfig -o /etc/grub2-efi.cfg
