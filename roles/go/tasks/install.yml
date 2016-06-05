@@ -1,0 +1,3 @@
+---
+- name: 'install'
+  package: name=golang state=present

@@ -4,3 +4,4 @@ dependencies:
   - { role: 'ruby',     tags: 'ruby' }
   - { role: 'php',      tags: 'php' }
   - { role: 'java',     tags: 'java' }
+  - { role: 'go',       tags: ['golang', 'go'] }
