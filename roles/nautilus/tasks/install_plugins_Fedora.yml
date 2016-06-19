@@ -2,4 +2,4 @@
 - name: 'Fedora: install plugins'
   package: name="{{ item }}" state=present
   with_items:
-    - 'nautilus-open-terminal'
+    - 'gnome-terminal-nautilus'
